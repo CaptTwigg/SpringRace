@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="refresh" content="0.1" />
+  <title>Title</title>
+  <link rel="stylesheet" href="css.css"/>
+
+</head>
+<body>
+
+<!--<form method="post" th:action="@{/}">-->
+  <!--<input type="text" name="input" th:target="${hash}"/>-->
+  <!--<input type="submit" value="Submit"/>-->
+  <!--<p th:text="${hash}"></p>-->
+<!--</form>-->
+
+<form method="post" th:action="@{/}">
+  <input type="submit" value="Start"/>
+
+</form>
+<label for="thread1" th:text="'Distance: ' + ${time1}"></label>
+<img id="thread1" src="http://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2018/cars/impala/impala/01-images/2018-impala-2lz-g1m.png?imwidth=1500"
+     th:style="'padding-left: ' + ${time1} + 'px'"/>
+
+<label for="thread2" th:text="'Distance: ' + ${time2}"></label>
+<img id="thread2" src="http://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2018/cars/impala/impala/01-images/2018-impala-2lz-g1m.png?imwidth=1500"
+     th:style="'padding-left: ' + ${time2} + 'px'"/>
+
+<label for="thread3" th:text="'Distance: ' + ${time3}"></label>
+<img id="thread3" src="http://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2018/cars/impala/impala/01-images/2018-impala-2lz-g1m.png?imwidth=1500"
+     th:style="'padding-left: ' + ${time3} + 'px'"/>
+
+
+</body>
+</html>
